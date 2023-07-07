@@ -1,14 +1,11 @@
 {
-  "name": "capacitor-codepush",
-  "version": "1.0.0",
+  "name": "cap-code-push",
+  "version": "1.0.0-beta.1",
   "description": "CodePush Plugin for Capacitor",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
-  "homepage": "https://github.com/mapiacompany/capacitor-codepush",
-  "repository": "github:mapiacompany/capacitor-codepush",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
+  "homepage": "https://github.com/mraghuram3/capacitor-codepush",
+  "repository": "github:mraghuram3/capacitor-codepush",
   "scripts": {
     "lint": "npm run prettier -- --check && npm run swiftlint -- lint",
     "prettier": "prettier \"**/*.{css,html,ts,js,java}\"",
@@ -26,10 +23,9 @@
     "capacitor-android",
     "capacitor-ios"
   ],
-  "author": "MAPIACOMPANY",
+  "author": "mraghuram3",
   "license": "MIT",
   "devDependencies": {
-    "@capacitor-community/http": "^2.0.0-0",
     "@capacitor/cli": "4.1.0",
     "@capacitor/core": "^4.0.0",
     "@capacitor/device": "^4.0.1",
@@ -81,11 +77,6 @@
     },
     "ios": {
       "src": "ios"
-    }
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   }
 }
